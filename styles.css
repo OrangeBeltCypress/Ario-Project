@@ -1,0 +1,95 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: green;
+    padding: 10px;
+    text-align: center;
+}
+
+header h1 {
+    color: white;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-align: center;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.home-content, .bio-content, .contact-content {
+    padding: 20px;
+    text-align: center;
+}
+
+.contact-content table {
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+.portfolio-gallery {
+    padding-bottom: 50px;
+}
+
+.portfolio-gallery .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.portfolio-gallery h2 {
+    text-align: center;
+}
+
+.portfolio-gallery img{
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    border: 2px solid tan;
+    border-radius: 5px;
+    transition: transform;
+}
+
+.portfolio-gallery img:hover{
+    transform: scale(1.1);
+    border: 2px solid orange;
+}
+@media (max-width: 600px) {
+    nav ul li {
+        display: block;
+        margin: 5px 0;
+    }
+
+    .portfolio-gallery img {
+        width: 100%;
+    }
+}
+
+footer {
+    background-color: gray;
+    color: aliceblue;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
